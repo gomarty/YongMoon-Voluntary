@@ -75,7 +75,7 @@
     for (let i = 0; i < 10; i++) {
       // 0~100 사이 무작위 정수를 arr 배열에 추가해요.
       arr.push(Math.floor(Math.random() * 100));
-    }
+    }              
     document.querySelector("#arr").innerText = arr;
 
     function inspect(arr, n) {
@@ -83,7 +83,13 @@
       let index = -1;
 
       // 함수를 구현해주세요!
-   
+      for(let i = 0; i<arr.length; i++){
+          if(arr[1] === n){
+            index = i;
+          break;          
+          }
+          
+      }
 
       return index;
     }
